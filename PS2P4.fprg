@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donal"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-04 04:14:06 PM"/>
+        <attribute name="created" value="RG9uYWw7TEFQVE9QLUc4TzYxRVBLOzIwMjQtMDItMDQ7MDI6NTQ6MDggUE07MjgxMw=="/>
+        <attribute name="edited" value="RG9uYWw7TEFQVE9QLUc4TzYxRVBLOzIwMjQtMDItMDQ7MDQ6MTQ6MDYgUE07MTsyOTE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="make" type="String" array="False" size=""/>
+            <declare name="model" type="String" array="False" size=""/>
+            <declare name="msrpamount" type="Integer" array="False" size=""/>
+            <declare name="discountpercent" type="Real" array="False" size=""/>
+            <declare name="amount" type="Real" array="False" size=""/>
+            <declare name="discount" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the make of the car you want&quot;" newline="True"/>
+            <input variable="make"/>
+            <output expression="&quot;Enter a model from the make you selected&quot;" newline="True"/>
+            <input variable="model"/>
+            <output expression="&quot;What is the msrp amount&quot;" newline="True"/>
+            <input variable="msrpamount"/>
+            <output expression="&quot;Enter the discount percent&quot;" newline="True"/>
+            <input variable="discountpercent"/>
+            <assign variable="amount" expression="msrpamount * discountpercent"/>
+            <output expression="&quot;Your amount off is $&quot; &amp; amount" newline="True"/>
+            <assign variable="discount" expression="msrpamount - amount"/>
+            <output expression="&quot;So for your &quot; &amp; make &amp; &quot; &quot; &amp; model &amp; &quot; your msrp is $&quot; &amp; msrpamount &amp; &quot;, but with your discount your total is $&quot; &amp; discount" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
