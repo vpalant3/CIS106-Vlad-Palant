@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donal"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-28 05:16:35 PM"/>
+        <attribute name="created" value="RG9uYWw7TEFQVE9QLUc4TzYxRVBLOzIwMjQtMDEtMjg7MDQ6NTM6NTIgUE07MjgxOA=="/>
+        <attribute name="edited" value="RG9uYWw7TEFQVE9QLUc4TzYxRVBLOzIwMjQtMDEtMjg7MDU6MTY6MzUgUE07MTsyOTI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="percent" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <declare name="final" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the price of item&quot;" newline="True"/>
+            <input variable="price"/>
+            <output expression="&quot;Enter discount in percent form&quot;" newline="True"/>
+            <input variable="percent"/>
+            <assign variable="total" expression="price * (percent / 100)"/>
+            <assign variable="final" expression="price - total"/>
+            <output expression="&quot;Your total discount is &quot; &amp; total &amp; &quot;%&quot; &amp; &quot;, Your final total amount is $&quot; &amp; final" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

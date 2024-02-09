@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donal"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-28 04:53:44 PM"/>
+        <attribute name="created" value="RG9uYWw7TEFQVE9QLUc4TzYxRVBLOzIwMjQtMDEtMjg7MDQ6Mzk6MDYgUE07MjgyMQ=="/>
+        <attribute name="edited" value="RG9uYWw7TEFQVE9QLUc4TzYxRVBLOzIwMjQtMDEtMjg7MDQ6NTM6NDQgUE07MTsyOTI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="creditstaken" type="Real" array="False" size=""/>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="totaltuition" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter last name&quot;" newline="True"/>
+            <input variable="lastname"/>
+            <output expression="&quot;How many credits have you taken&quot;" newline="True"/>
+            <input variable="creditstaken"/>
+            <assign variable="totaltuition" expression="creditstaken * 250 + 100"/>
+            <output expression="&quot;Mr.&quot; &amp; lastname &amp; &quot; your total tuition including the lab fee is $&quot; &amp; totaltuition" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
