@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donal"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-18 08:28:29 PM"/>
+        <attribute name="created" value="RG9uYWw7TEFQVE9QLUc4TzYxRVBLOzIwMjQtMDItMTg7MDc6MTk6MTMgUE07MjgyMA=="/>
+        <attribute name="edited" value="RG9uYWw7TEFQVE9QLUc4TzYxRVBLOzIwMjQtMDItMTg7MDg6Mjg6MjkgUE07MTsyOTM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="books" type="Real" array="False" size=""/>
+            <declare name="cost" type="Integer" array="False" size=""/>
+            <declare name="shippingcost1" type="Real" array="False" size=""/>
+            <assign variable="shippingcost1" expression="25"/>
+            <declare name="ordertotal1" type="Integer" array="False" size=""/>
+            <declare name="ordertotal2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of books to order&quot;" newline="True"/>
+            <input variable="books"/>
+            <output expression="&quot;Enter the cost per book&quot;" newline="True"/>
+            <input variable="cost"/>
+            <if expression="cost&lt;=50.00">
+                <then>
+                    <assign variable="ordertotal1" expression="(cost * books) + shippingcost1"/>
+                    <output expression="&quot;Your total for &quot; &amp; books &amp; &quot; book(s), comes out to $&quot; &amp; ordertotal1 &amp; &quot;, and this includes your $25 shipping fee&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="ordertotal2" expression="(cost * books) + 0"/>
+                    <output expression="&quot;Your total for &quot; &amp; books &amp; &quot; book(s) comes out to $&quot; &amp; ordertotal2 &amp; &quot;, and since your subtotal is over $50 shipping is free!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

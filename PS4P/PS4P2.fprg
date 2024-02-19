@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donal"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-18 12:50:23 PM"/>
+        <attribute name="created" value="RG9uYWw7TEFQVE9QLUc4TzYxRVBLOzIwMjQtMDItMTg7MTI6MDU6NDkgUE07MjgyMA=="/>
+        <attribute name="edited" value="RG9uYWw7TEFQVE9QLUc4TzYxRVBLOzIwMjQtMDItMTg7MTI6NTA6MjMgUE07MTsyOTIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="item" type="Real" array="False" size=""/>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <declare name="A" type="String" array="False" size=""/>
+            <declare name="B" type="String" array="False" size=""/>
+            <declare name="finalprice10" type="Real" array="False" size=""/>
+            <declare name="finalprice20" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter 1 for A and 2 for B for your requested item&quot;" newline="True"/>
+            <input variable="item"/>
+            <output expression="&quot;Please enter quantity of item &quot; &amp; item" newline="True"/>
+            <input variable="number"/>
+            <if expression="item = 1">
+                <then>
+                    <assign variable="finalprice10" expression="10 * number"/>
+                    <output expression="&quot;The Item is A, the price per item is $10 and the final price is $&quot; &amp; finalprice10" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="finalprice20" expression="20 * number"/>
+                    <output expression="&quot;The Item is B, the price per item is $20 and the final price is $&quot; &amp; finalprice20" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
