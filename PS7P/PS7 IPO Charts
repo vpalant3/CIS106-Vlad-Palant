@@ -1,1 +1,163 @@
+CIS 106 – Loops Part 2
+
+For each problem prepare an IPO chart. Then write the code for each. Save the IPO within this document and upload to your repository. After code is complete upload the files (.py) to your repository. Paste the link to your repository into the assignment completion link in Blackboard. 
+
+1.	Allow the user to enter a principle amount and interest rate repeatedly (need a loop to control the program execution). Compute the annual interest (principle x rate). Compute ending balance to be principle (beginning balance + interest). Display year, beginning balance and ending balance for each of the 5 years. Display the accumulated interest for the 5 years. Note:  the new balance by year (this will be the principle for the following year. Format the output. 
+Example:
+Enter principle amount: 10000.00
+Enter interest rate: 0.10
+
+Year           Beginning	    Ending
+                      Balance	   Balance
+1	   $10,000.00       $11,000.00
+2	   $11,000.00       $12,100.00
+3	   $12,100.00       $13,310.00
+4	   $13,310.00       $14,641.00
+5	   $14,641.00       $16,105.00
+Total interest earned: $6,156.00  
+Input	Process	Output
+Principle 
+		
+Interest amount	For count in range (1,6, 1):
+AIR = principle x rate 
+ending = principle + AIR
+
+	Year count
+Balance Starting 
+Amount Ending
+	Principle = eb	
+		
+		
+		
+		
+
+2.	Fibonacci sequence is a sequence of natural order. The sequence is:
+1, 1, 2, 3, 5, 8 etc
+Use of for loop compute and display first 20 numbers in the sequence. Hint: start with 1 , 1.
+
+
+
+Input	Processing	
+A = 1	C = a + b	Print c 
+B =1	b = c 	
+	a = b	
+		
+		
+		
+		
+
+
+3.	Create a text file that contains employee last name and salary. Read in this data. Determine the bonus rate based on the chart below. Use that rate to compute bonus.  For each line display the employee last name, salary and bonus. After the loop display the sum of all bonuses paid out. 
+Salary			Bonus Rate
+100,000.00 and up	      20%
+50,000.00		      15%
+All other salaries	      10%
+
+Example file (create your own data with at least 5 lines:
+Adams
+50000.00
+Baker
+75000.00
+Smith
+45000.00
+Etc 
+Inputs	process	Outputs
+Name	Get name 
+Get salary 
+
+If salary > 100000 
+Bonus = 20%	Name
+
+Salary	If salary is > 50000 
+Bonus = 15%	Bonus
+Salary
+	Else bonus = 10%	
+	 Final Salary = Salary * bonus + salary	
+		
+		After loop display
+
+		Bonuses sum 
+
+4.	Create a text file with item, quantity and price. Read through the file one line at a time. Compute the extended price (quantity x price). For each line display the item, quantity, price and extended price. After the loop display the sum of all the extended prices, the count of the number of orders and the average order. 
+Example Data File
+Widget
+10
+50
+Hammer
+2
+10
+Saw
+4
+8
+Etc	
+input	Proccess	Output
+		
+Item	C = 0
+EP = 0	
+Qty	Get item
+While item != “”
+Get qty* price
+Ep= qty * price
+C = c+1
+Totep=totetp + ep	Item 
+Price
+Qty
+ep
+Price		
+	Avg = tot ep / c 	C 
+Tot ep
+avg
+	Display c , totep, avg 	
+		
+
+
+
+
+
+5.	Create a text file with student last name, district code (I or O) and number of credits taken. Compute tuition owed (credits taken x cost per credit). Cost per credit for in district students (district code I) is 250.00. Out of district students pay 500.00 per credit. For each line display student last name, credits taken and tuition owed. After the loop display sum of all tuition owed and the number of students. 
+
+
+Example file
+Jones
+I
+12
+Adams
+I
+10
+Baker
+O
+12
+Smith
+O
+16
+Input	process	output
+		
+	TT = 0
+C = 0	
+Name	Getr first name	
+Dcode	While not at end
+Get dcode , credits
+
+If decode = “I”
+CPC = 250
+Else
+Cpc = 500
+
+Tuition = cpc * credits
+
+C= c+1
+Tt= tt + tuition
+Display name, credits, tuition
+
+Get next last name	Last name
+Credits
+Tuition
+Tt
+C
+
+credits		
+	Display TT,
+Display number of students	
+		
+
 
